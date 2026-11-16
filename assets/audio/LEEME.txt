@@ -1,0 +1,15 @@
+Copiá acá los fragmentos / canciones en mp3 con estos nombres:
+
+01.mp3  -> Portada (LOLA)
+02.mp3  -> Track 01
+03.mp3  -> Track 02 (Faltan)
+04.mp3  -> Track 03 (Fecha y hora)  [de bts4.mp4]
+05.mp3  -> Track 04 (Cómo llegar)
+06.mp3  -> Track 05 (Dress code)
+07.mp3  -> Track 06 (Bloomkeep)
+08.mp3  -> Track 07 (Música)
+09.mp3  -> Track 08 (Regalos)
+10.mp3  -> Track 09 (Confirmación) y footer
+
+Para elegir en qué segundo arranca cada fragmento y el nombre de la
+canción que se muestra, editá la lista SONGS al principio de script.js.

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Invitación de Lola — Sábado 20 de marzo de 2027, 21 hs">
+  <title>Lola · Modelo BTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body class="is-locked">
+  <!-- Intro: estadio a oscuras, el show está por empezar -->
+  <div class="intro" id="intro" role="button" tabindex="0" aria-label="Tocá para entrar a la invitación">
+    <div class="intro__haze" aria-hidden="true"></div>
+    <div class="intro__beams" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="intro__crowd" id="introCrowd" aria-hidden="true"></div>
+
+    <div class="intro__content">
+      <p class="intro__kicker">ARMY, ARE YOU READY?</p>
+      <img class="intro__logo" src="assets/logo-circulos.png" alt="" width="880" height="306">
+      <h2 class="intro__title" aria-label="Lola"><span>L</span><span>O</span><span>L</span><span>A</span></h2>
+      <p class="intro__meta"><span>LIVE</span> 20 · 03 · 2027 <span>21 HS</span></p>
+      <div class="intro__play" aria-hidden="true">
+        <span class="intro__orb"><b>▶</b></span>
+        <i></i><i></i>
+      </div>
+      <p class="intro__hint">🔊 SUBÍ EL VOLUMEN Y TOCÁ PARA ENTRAR</p>
+    </div>
+
+    <div class="intro__count" id="introCount" aria-hidden="true"></div>
+    <div class="intro__flash" aria-hidden="true"></div>
+  </div>
+
+  <div class="progress" data-beat aria-hidden="true"><span id="progressBar"></span></div>
+
+  <main>
+    <section class="sheet cover" data-track="00 · LOLA" aria-label="Portada de la invitación">
+      <div class="cover__photo">
+        <img src="assets/lola-recital.jpg" alt="Lola en el recital de BTS con su ARMY Bomb" width="926" height="1280">
+      </div>
+      <div class="fx cover__bomb" data-beat aria-hidden="true"></div>
+      <div class="fx" data-particles="twinkle" data-count="14" aria-hidden="true"></div>
+      <p class="cover__eyebrow" aria-hidden="true">BTS · ARIRANG EDITION</p>
+      <div class="cover__title">
+        <div class="cover__rings" data-beat aria-hidden="true"><i></i><i></i><i></i></div>
+        <img class="cover__logo" src="assets/logo-circulos.png" alt="" width="880" height="306">
+        <img class="cover__name" src="assets/lola-nombre.png" alt="Lola" width="880" height="594">
+      </div>
+    </section>
+
+    <section class="sheet fx-stadium" data-track="01 · INTRO" aria-label="Track 01">
+      <img src="assets/track01.png" alt="Track 01. I need the whole stadium to jump. Esta noche, la pista es nuestra." width="941" height="1672">
+      <div class="fx fx-beams" data-beat aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="fx" data-particles="spark" data-count="22" aria-hidden="true"></div>
+    </section>
+
+    <section class="sheet countdown-sheet" data-track="02 · FALTAN" aria-labelledby="countdown-title">
+      <img src="assets/cuenta-regresiva.png" alt="" width="941" height="1672">
+      <div class="fx fx-ring" data-beat aria-hidden="true"></div>
+      <h1 id="countdown-title" class="sr-only">Track 02. Faltan</h1>
+      <div class="countdown" data-beat aria-hidden="true">
+        <span id="days">000</span><span id="hours">00</span><span id="minutes">00</span><span id="seconds">00</span>
+      </div>
+      <p class="sr-only" id="countdownText"></p>
+    </section>
+
+    <section class="sheet" data-track="03 · FECHA Y HORA" aria-label="Fecha y hora">
+      <img src="assets/fecha.png" alt="Track 03. Sábado 20 de marzo de 2027, 21:00 hs" width="941" height="1672">
+      <div class="fx" data-particles="confetti" data-count="26" aria-hidden="true"></div>
+      <div class="fx fx-ticket" aria-hidden="true"></div>
+      <button class="hotspot calendar-hotspot" id="calendarButton" aria-label="Agendar la fiesta en el calendario"></button>
+      <p class="hint calendar-hint" aria-hidden="true">TOCÁ EL TICKET PARA AGENDAR</p>
+    </section>
+
+    <section class="sheet fx-kenburns crop-frame" data-track="04 · CÓMO LLEGAR" aria-label="Cómo llegar">
+      <img src="assets/ubicacion.png" alt="Track 04. Cómo llegar" width="944" height="1665">
+      <button class="hotspot pill location-hotspot" data-open="locationDialog" aria-label="Ver ubicación"></button>
+    </section>
+
+    <section class="sheet" data-track="05 · DRESS CODE" aria-label="Dress code">
+      <img src="assets/dress-code.png" alt="Track 05. Dress code elegante" width="941" height="1672">
+      <div class="fx fx-shine" aria-hidden="true"></div>
+      <div class="fx fx-flash" data-beat aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="sheet" data-track="06 · BLOOMKEEP" aria-label="Bloomkeep">
+      <img src="assets/bloomkeep.png" alt="Track 06. Bloomkeep. Compartí las fotos de esta noche y ayudame a guardar cada recuerdo." width="941" height="1672">
+      <div class="fx fx-scan" data-beat aria-hidden="true"></div>
+      <div class="fx fx-glitch" aria-hidden="true"><i></i><i></i><i></i></div>
+      <button class="hotspot pill bloom-hotspot" data-open="bloomDialog" aria-label="Subir fotos"></button>
+    </section>
+
+    <section class="sheet" data-track="07 · MÚSICA" aria-label="Música">
+      <img src="assets/musica.png" alt="Track 07. Música. Ayudame a armar la playlist de esta noche." width="941" height="1672">
+      <div class="fx" data-particles="note" data-count="16" aria-hidden="true"></div>
+      <button class="hotspot pill music-hotspot" data-open="musicDialog" aria-label="Sumar canción"></button>
+    </section>
+
+    <section class="sheet" data-track="08 · REGALOS" aria-label="Regalos">
+      <img src="assets/regalos.png" alt="Track 08. Regalos. El mejor regalo es compartir esta noche juntos." width="941" height="1672">
+      <div class="fx" data-particles="heart" data-count="18" aria-hidden="true"></div>
+      <button class="gift-stage" id="giftStage" type="button" aria-label="Tocá a los personajes para que salten">
+        <span class="gift-sway"><span class="gift-dance" data-beat><img src="assets/regalos-personajes.png" alt="" width="941" height="867" id="giftChars"></span></span>
+      </button>
+      <span class="gift-bubble" id="giftBubble" aria-hidden="true">¡TOCANOS!</span>
+      <button class="hotspot pill gift-hotspot" data-open="giftDialog" aria-label="Ver datos para regalos"></button>
+    </section>
+
+    <section class="sheet" data-track="09 · CONFIRMACIÓN" aria-label="Confirmación de asistencia">
+      <img src="assets/confirmacion.png" alt="Track 09. Confirmación de asistencia. Tu presencia hará esta noche aún más especial." width="941" height="1672">
+      <div class="fx" data-particles="twinkle" data-count="28" aria-hidden="true"></div>
+      <div class="fx fx-spot" data-beat aria-hidden="true"></div>
+      <button class="hotspot pill rsvp-hotspot" data-open="rsvpDialog" aria-label="Confirmar asistencia"></button>
+    </section>
+  </main>
+
+  <footer class="footer" data-track="FIN · GRACIAS">
+    <span class="footer__rule" aria-hidden="true"></span>
+    <p class="footer__made">Hecho con amor por <strong>BloomDate</strong></p>
+    <nav class="footer__links" aria-label="Enlaces de BloomDate">
+      <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp de BloomDate">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.2c.2-.5.6-.6 1-.5l.9 1.9c.1.3 0 .5-.2.7l-.6.6c.6 1.3 1.6 2.3 2.9 2.9l.6-.6c.2-.2.5-.3.7-.2l1.9.9c.1.4 0 .8-.5 1.1-.7.5-1.6.6-2.4.3-2.3-.8-4-2.6-4.8-4.8-.3-.8-.2-1.6.5-2.3z" class="fill"/></svg>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de BloomDate">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="fill"/></svg>
+      </a>
+      <a href="#" aria-label="Sitio web de BloomDate">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="3.8" ry="8.5"/><path d="M3.5 12h17M5 7.5h14M5 16.5h14"/></svg>
+      </a>
+    </nav>
+    <p class="footer__rights">Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Indicador "now playing" -->
+  <button class="now-playing" id="nowPlaying" type="button" aria-label="Silenciar música" aria-pressed="false">
+    <span class="now-playing__eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="now-playing__text">
+      <span>TRACK <b id="nowPlayingTrack">00 · LOLA</b></span>
+      <small id="nowPlayingSong">ARIRANG</small>
+    </span>
+    <span class="now-playing__sound" id="soundIcon" aria-hidden="true">🔊</span>
+  </button>
+
+  <dialog id="locationDialog" class="modal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <p class="eyebrow">TRACK 04 · CÓMO LLEGAR</p>
+    <h2>SALÓN DE EVENTOS</h2>
+    <p>Dirección de ejemplo 1234<br>Buenos Aires</p>
+    <div class="modal-actions">
+      <a class="red-button" href="https://www.google.com/maps/search/?api=1&query=Buenos+Aires" target="_blank" rel="noopener">GOOGLE MAPS</a>
+      <a class="red-button" href="https://www.waze.com/ul?q=Buenos%20Aires&navigate=yes" target="_blank" rel="noopener">WAZE</a>
+      <button class="outline-button" id="copyAddress">COPIAR DIRECCIÓN</button>
+    </div>
+    <p class="status" id="copyStatus" role="status"></p>
+  </dialog>
+
+  <dialog id="bloomDialog" class="modal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <p class="eyebrow">TRACK 06 · BLOOMKEEP</p>
+    <h2>SUBÍ TUS FOTOS</h2>
+    <p>El espacio para compartir fotos y recuerdos de la noche va a estar disponible muy pronto.</p>
+    <button class="red-button" data-close>ENTENDIDO</button>
+  </dialog>
+
+  <dialog id="musicDialog" class="modal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <p class="eyebrow">TRACK 07 · MÚSICA</p>
+    <h2>WHAT IS YOUR LOVE SONG?</h2>
+    <form id="musicForm">
+      <label>Tu nombre<input name="name" autocomplete="name" required></label>
+      <label>Canción y artista<input name="song" required></label>
+      <button class="red-button" type="submit">SUMAR CANCIÓN</button>
+    </form>
+    <p class="status" id="musicStatus" role="status"></p>
+  </dialog>
+
+  <dialog id="giftDialog" class="modal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <p class="eyebrow">TRACK 08 · REGALOS</p>
+    <h2>GRACIAS POR ESTAR</h2>
+    <p>Si querés hacerme un regalo, podés usar estos datos:</p>
+    <div class="data-card">
+      <small>ALIAS</small>
+      <strong id="giftAlias">LOLA.FIESTA</strong>
+      <small>TITULAR</small>
+      <strong>Lola</strong>
+    </div>
+    <button class="red-button" id="copyGift">COPIAR ALIAS</button>
+    <p class="status" id="giftStatus" role="status"></p>
+  </dialog>
+
+  <dialog id="rsvpDialog" class="modal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <p class="eyebrow">TRACK 09 · CONFIRMACIÓN</p>
+    <h2>¡TE ESPERO!</h2>
+    <form id="rsvpForm">
+      <label>Nombre y apellido<input name="name" autocomplete="name" required></label>
+      <label>¿Vas a asistir?
+        <select name="attendance" required>
+          <option value="">Elegí una opción</option>
+          <option value="Sí, voy a asistir">Sí, voy a asistir</option>
+          <option value="No podré asistir">No podré asistir</option>
+        </select>
+      </label>
+      <label>Mensaje (opcional)<textarea name="message" rows="3"></textarea></label>
+      <button class="red-button" type="submit">ENVIAR CONFIRMACIÓN</button>
+    </form>
+    <p class="status" id="rsvpStatus" role="status"></p>
+  </dialog>
+
+  <script src="script.js?v=10"></script>
+</body>
+</html>

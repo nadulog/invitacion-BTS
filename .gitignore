@@ -1,0 +1,4 @@
+# Videos originales: pesan cientos de MB, la invitación usa los mp3 recortados
+*.mp4
+# Respaldos de imágenes que no usa la página
+assets/*-original.png
